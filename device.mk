@@ -227,6 +227,10 @@ PRODUCT_COPY_FILES += \
 # never dexopt the MotoSignature
 $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 
+# Thermal config
+PRODUCT_COPY_FILES += \
+    device/moto/shamu/configs/thermal-engine-shamu.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-shamu.conf
+
 # Enable for volte call
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 
