@@ -304,4 +304,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Perf
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-   ro.qualcomm.perf.cores_online=2
+    ro.qualcomm.perf.cores_online=2
+
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.enable_timeout_ms=12000
