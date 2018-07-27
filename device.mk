@@ -279,3 +279,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=0 \
     persist.camera.HAL3.enabled=1 \
     persist.camera.ois.disable=0
+
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.enable_timeout_ms=12000
+
